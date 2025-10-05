@@ -1,0 +1,45 @@
+{
+  "training_date": "2025-10-06",
+  "auc_score": 0.8169779637810328,
+  "f1_score": 0.608,
+  "precision": 0.530938123752495,
+  "recall": 0.7112299465240641,
+  "optimal_threshold": 0.20000000000000004,
+  "training_epochs": 500,
+  "training_dataset_size": 5634,
+  "class_distribution": {
+    "churn": 1495,
+    "no_churn": 4139
+  },
+  "feature_count": 41,
+  "hyperparameters": {
+    "hidden_layers": [
+      256,
+      128,
+      64
+    ],
+    "dropout_rate": 0.2,
+    "learning_rate": 0.0001,
+    "weight_decay": 1e-05
+  },
+  "serialization_timestamp": "20251006_001514",
+  "model_version": "churn_model_v20251006_001514_auc0.817",
+  "pytorch_version": "2.8.0+cpu",
+  "input_features": 41,
+  "architecture": [
+    "Linear(in_features=41, out_features=256, bias=True)",
+    "BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)",
+    "ReLU()",
+    "Dropout(p=0.2, inplace=False)",
+    "Linear(in_features=256, out_features=128, bias=True)",
+    "BatchNorm1d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)",
+    "ReLU()",
+    "Dropout(p=0.2, inplace=False)",
+    "Linear(in_features=128, out_features=64, bias=True)",
+    "BatchNorm1d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)",
+    "ReLU()",
+    "Dropout(p=0.2, inplace=False)",
+    "Linear(in_features=64, out_features=1, bias=True)"
+  ],
+  "device": "cpu"
+}
